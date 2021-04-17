@@ -15,6 +15,10 @@ public class Main {
 
     model_table my_model_table=new model_table();
     public  void gorunning(){
-        my_model_table.model_main();
+        try {
+            my_model_table.model_main();
+        }catch(Exception ex){
+            ex.getStackTrace();
+        }
     }
 }
